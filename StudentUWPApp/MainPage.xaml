@@ -16,6 +16,7 @@
                 <DataTemplate x:DataType="local:Student">
                     <StackPanel Orientation="Horizontal">
                         <TextBox Text="{x:Bind Navn, Mode=TwoWay}"></TextBox>
+                        <TextBox Text="{x:Bind MobilNummer, Mode=TwoWay}"></TextBox>
                         <TextBlock Text="{x:Bind StudentID, Mode=TwoWay}"></TextBlock>
                     </StackPanel>
                 </DataTemplate>

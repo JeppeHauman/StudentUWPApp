@@ -39,6 +39,21 @@ namespace StudentUWPApp
 			}
 		}
 
+		private int _mobilNummer;
+
+		public int MobilNummer
+		{
+			get { return _mobilNummer; }
+			set {  
+				if (_mobilNummer != value)
+				{
+					_mobilNummer = value;
+					this.OnPropertyChanged();
+				}									
+			}
+		}
+
+
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
