@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,9 +23,16 @@ namespace StudentUWPApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public ObservableCollection<Student> OC_list_Students { get; }
+            = new ObservableCollection<Student>();
         public MainPage()
         {
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN1" });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN2" });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN3" });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN4" });
             this.InitializeComponent();
         }
+        
     }
 }
