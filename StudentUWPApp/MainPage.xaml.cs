@@ -33,6 +33,10 @@ namespace StudentUWPApp
             this.OC_list_Students.Add(new Student() { Navn = "NAVN4", StudentID = 3455, MobilNummer = 24567883 });
             this.InitializeComponent();
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
