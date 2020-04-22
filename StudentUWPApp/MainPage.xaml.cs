@@ -27,10 +27,10 @@ namespace StudentUWPApp
             = new ObservableCollection<Student>();
         public MainPage()
         {
-            this.OC_list_Students.Add(new Student() { Navn = "NAVN1" });
-            this.OC_list_Students.Add(new Student() { Navn = "NAVN2" });
-            this.OC_list_Students.Add(new Student() { Navn = "NAVN3" });
-            this.OC_list_Students.Add(new Student() { Navn = "NAVN4" });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN1", StudentID = 1234 });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN2", StudentID = 2334 });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN3", StudentID = 2342 });
+            this.OC_list_Students.Add(new Student() { Navn = "NAVN4", StudentID = 3455 });
             this.InitializeComponent();
         }
         

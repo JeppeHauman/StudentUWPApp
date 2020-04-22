@@ -25,6 +25,21 @@ namespace StudentUWPApp
 				}
 			}
 
+		private int _studentID;
+
+		public int StudentID
+		{
+			get { return _studentID; }
+			set {
+				if (_studentID != value)
+				{
+					_studentID = value;
+					this.OnPropertyChanged();
+				} 
+			}
+		}
+
+
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		public void OnPropertyChanged([CallerMemberName] string Navn = null) 
